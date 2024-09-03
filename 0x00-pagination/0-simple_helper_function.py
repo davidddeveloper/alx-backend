@@ -12,4 +12,4 @@ def index_range(page: int, page_size: int) -> Tuple[int, int]:
             page: the page
             page_size: and page_size
     """
-    return ((page * page_size) - page_size, page_size)
+    return (((page * page_size) - page_size), page_size)
