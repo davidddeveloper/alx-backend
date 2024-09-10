@@ -1,9 +1,16 @@
+"""
+    0-app.py: a basic flask application
+
+"""
 from flask import Flask
 from flask import render_template
 
-
 app = Flask(__name__)
+
 
 @app.route("/")
 def home():
-    return render_template("templates/0-index.html")
+    """
+        render an index template
+    """
+    return render_template("0-index.html")
